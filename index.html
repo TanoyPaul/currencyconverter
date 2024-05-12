@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Currency Convertor</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Currency Convertor</h1>
+      <form class="form" action="">
+        <div class="amount">
+          <p>Enter Amount :</p>
+          <input placeholder="Enter any amount ..." type="text" />
+        </div>
+
+        <div class="dropdown">
+          <div class="from">
+            <p>From</p>
+            <div class="select_container">
+              <img src="https://flagsapi.com/US/shiny/64.png" alt="" />
+              <select name="from" id="from_currency">
+                
+              </select>
+            </div>
+          </div>
+          <i class="ri-arrow-left-right-line" id="arrow"></i>
+          <div class="to">
+            <p>To</p>
+            <div class="select_container">
+              <img src="https://flagsapi.com/IN/shiny/64.png" alt="" />
+              <select name="to" id="to_currency">
+               
+              </select>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer">
+          <h2 class="exchangeTxt"> Get exchanged rate here ...</h2>
+          <button class="exchange">Get Exchange Rate</button>
+        </div>
+      </form>
+    </div>
+    <script src="./countries.js"></script>
+    <!-- <script src="./amount.js"></script> -->
+    <script src="./src.js"></script>
+  </body>
+</html>
